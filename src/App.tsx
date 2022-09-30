@@ -1,24 +1,24 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
+import CharacterList, { Character } from './CharacterList'
 
-const App: React.FC = () => (
-    <div className="App">
-        <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-                Edit <code>src/App.tsx</code> and save to reload.
-            </p>
-            <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Learn React
-            </a>
-        </header>
-    </div>
-)
+const App: React.FC = () => {
+    const characters: Character[] = [
+        {
+            id: 1,
+            name: '桜木花道',
+            grade: 1,
+            height: 189.2,
+        },
+    ]
+
+    return (
+        <div className="container">
+            <header className="App-header">
+                <CharacterList school="湘北" characters={characters} />
+            </header>
+        </div>
+    )
+}
 
 export default App
