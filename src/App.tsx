@@ -1,6 +1,6 @@
 import React from 'react'
-import './App.css'
 import CharacterList, { Character } from './components/CharacterList'
+import './theme/tailwind.css'
 
 const App: React.FC = () => {
     const characters: Character[] = [
@@ -19,7 +19,7 @@ const App: React.FC = () => {
     ]
 
     return (
-        <div className="container">
+        <div className="m-10">
             <header className="App-header">
                 <CharacterList school="湘北" characters={characters} />
             </header>
