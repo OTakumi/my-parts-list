@@ -17,7 +17,7 @@ const CharacterList: React.FC<Props> = (props) => {
 
     return (
         <>
-            <header className="h2">{school}</header>
+            <header className="text-base">{school}</header>
             <body>
                 {characters.map((character) => (
                     <ul className="list-disc">
