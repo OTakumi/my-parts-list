@@ -20,7 +20,7 @@ const CharacterList: React.FC<Props> = ({ school, characters }) => (
                 <ul className="mb-2 list-disc">
                     <li>{character.name}</li>
                     <li>{character.grade}年生</li>
-                    <li>{character.height ? character.height : '???'}</li>
+                    <li>{character.height ?? '???'}</li>
                 </ul>
             ))}
         </body>
